@@ -1,0 +1,85 @@
+Version 0.5.8 beta: 24-May-2006
+ 
+   - Fixed buffering problem while doing base64-encoding
+   - Fixed missing ContentID in FileAttachment
+   - Added BinaryReader support for FileAttachment.
+
+Version 0.5.7 beta: 17-Dec-2005
+ 
+   - Added event delegates to SmtpServer to listen to the SMTP conversation
+   - Deprecated the use of CaptureSmtpConversation   
+   - Added simple version of email address string parser.
+   - Added a potential patch for piping a file attachment from memory
+
+Version 0.5.6 beta: 16-Sep-2005
+ 
+   - Fixed SMTP AUTH LOCAL negotiation where the server returns multiple types
+   - SmtpProxy loops through multiline EHLO response correctly.
+
+Version 0.5.5 beta: 25-Aug-2005
+
+   - Fixed handling of RFC-2822 "special" characters in email name.
+   - Added nicer error message when "From" name is missing.
+
+Version 0.5.4 beta: 19-Aug-2005
+
+   - Replaced incorrect call to BodyName in QPEncoder and Base64Encoder with call
+     to HeaderName
+   - Added workaround for incorrect value returned by the .net framework for
+     Russian Windows-1251 (Encoding.GetEncoding("windows-1251").BodyName)
+   - Added error checking for truncated server responses of less than 3 
+     characters.
+   - Fixed various incorrect numerical references to RFCs.
+   - Fixed QP-encoding of the question mark in message headers.
+
+Version 0.5.3 beta: 3-Aug-2005
+
+   - Fixed RFC2822Date class to be independent of the deployment system default.
+   - Added ability to view the SMTP conversation in the SmtpServer class.
+
+Version 0.5.2 beta: 30-May-2005
+
+   - Added check for empty charset for Header in both EmailAddress and 
+     QPEncoder (default is iso-8859-1)
+   - Fixed the QPEncoder wrapping algorithm for long headers.
+   - An extra line was removed after a mimeheader which was pushing
+     custom headers into the mail body.
+   
+   
+Version 0.5.1 beta: 26-Apr-2005
+
+   - Added ability to create FileAttachment from an in-memory byte array
+   - Fixed suppression of SMTP error on rejected RCPT TO address.
+   - Added NMock 1.1 to the source distribution.
+   - Added LOGIN protocol for SMTP AUTH.
+   - Refactored the SmtpProxy and SmtpServer to allow for Mocking
+     up various SMTP servers and SMTP protocol exchanges.
+   
+Version 0.5.0 beta: 1-Apr-2005
+
+   - Added NDoc documentation
+   - Added ability to create FileAttachment from a string
+
+Version 0.4.0 beta: 1-Apr-2005
+
+   - Botched the Subversion tag
+   
+Version 0.3.1: 3-Mar-2005 
+   
+   - Added 7bit and 8bit options to encoder
+   - Fixed Camel Casing on web site, added example for next point
+   - Added ability to create FileAttachment from a reader
+      
+Version 0.3: 18-Feb-2005
+
+   - Added French localization
+   - Added modified examples from the web site as NUnit tests
+     to ensure they work
+   - Added ability to change Encoding and character set for
+     something other than latin-1.  The API for specifying
+     the encoding changed.
+   - Fixed quoted printable to work with multibyte characters.     
+
+Version 0.2.1: 9-Feb-2005
+
+   - Initial Release

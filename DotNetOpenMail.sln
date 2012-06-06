@@ -1,0 +1,38 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetOpenMail", "DotNetOpenMail\DotNetOpenMail.csproj", "{6FBB299F-81A1-49EA-B00A-E916F8F797B3}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetOpenMailTests", "DotNetOpenMailTests\DotNetOpenMailTests.csproj", "{74F3DCD7-1325-4968-B466-38618A380CE9}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{6FBB299F-81A1-49EA-B00A-E916F8F797B3}.Debug.ActiveCfg = Debug|.NET
+		{6FBB299F-81A1-49EA-B00A-E916F8F797B3}.Debug.Build.0 = Debug|.NET
+		{6FBB299F-81A1-49EA-B00A-E916F8F797B3}.Release.ActiveCfg = Release|.NET
+		{6FBB299F-81A1-49EA-B00A-E916F8F797B3}.Release.Build.0 = Release|.NET
+		{74F3DCD7-1325-4968-B466-38618A380CE9}.Debug.ActiveCfg = Debug|.NET
+		{74F3DCD7-1325-4968-B466-38618A380CE9}.Debug.Build.0 = Debug|.NET
+		{74F3DCD7-1325-4968-B466-38618A380CE9}.Release.ActiveCfg = Release|.NET
+		{74F3DCD7-1325-4968-B466-38618A380CE9}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(SolutionItems) = postSolution
+		CHANGES.txt = CHANGES.txt
+		DotNetOpenMailTests.dll.config = DotNetOpenMailTests.dll.config
+		DotNetOpenMailTests.dll.config.demo = DotNetOpenMailTests.dll.config.demo
+		DotNetOpenMailTests.dll.log4net = DotNetOpenMailTests.dll.log4net
+		LICENSE.txt = LICENSE.txt
+		README.txt = README.txt
+		README_NUNIT.txt = README_NUNIT.txt
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

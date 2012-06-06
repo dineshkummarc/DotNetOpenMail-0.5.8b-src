@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+	<appSettings>
+		<add key="dnom.test.smtp.server" value="localhost" />
+		<add key="dnom.test.fromaddress" value="test@localhost" />
+		<add key="dnom.test.toaddress" value="test@localhost" />
+		<!--add key="dnom.headers.xsender" value="DotNetOpenMail NUnit Tests" /-->
+	</appSettings>
+</configuration>
